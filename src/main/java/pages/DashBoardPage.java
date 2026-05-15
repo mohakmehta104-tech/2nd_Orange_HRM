@@ -23,6 +23,10 @@ public class DashBoardPage {
 	By adminElement = By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name']");
 	By directoryElement = By.xpath("//a[@class=\"oxd-main-menu-item active\"]");
 	By pimMenu = By.xpath("//span[text()='PIM']");
+	By leaveElement = By.xpath("//a[@class='oxd-main-menu-item active']");
+	By timeElement = By.xpath("//span[normalize-space()='Time']");
+	By recruitmentElement = By.xpath("//span[normalize-space()='Recruitment']");
+	By myInfoElement = By.xpath("//span[normalize-space()='My Info']");
 	
 	public void clickAdminElement()
 	{
@@ -43,6 +47,34 @@ public class DashBoardPage {
 		WaitUtil.waitForElementClickable(driver, pimMenu);
 		driver.findElement(pimMenu).click();
 		
+	}
+	
+	public void clickLeave()
+	{
+		
+		WaitUtil.waitForElementClickable(driver, leaveElement);
+		driver.findElement(leaveElement);
+	}
+	
+	public void clickTime()
+	{
+		
+		WaitUtil.waitForElementClickable(driver, timeElement);
+		driver.findElement(timeElement);
+	}
+	
+	public void clickRecruitment()
+	{
+		
+		WaitUtil.waitForElementClickable(driver, recruitmentElement);
+		driver.findElement(recruitmentElement);
+	}
+	
+	public void clickMyInfo()
+	{
+		
+		WaitUtil.waitForElementClickable(driver, myInfoElement);
+		driver.findElement(myInfoElement);
 	}
 
 }
