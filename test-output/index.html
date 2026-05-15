@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\mohak\AppData\Local\Temp\testng-eclipse--988282232\testng-customsuite.xml</span>
+                    <span>C:\Users\mohak\AppData\Local\Temp\testng-eclipse-2128930865\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -117,12 +117,32 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful Login&quot;, &quot;Login Functionality&quot;)">runScenario("Successful Login", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Time Element Check&quot;, &quot;Time Functionality&quot;)">runScenario("Time Element Check", "Time Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Click on Admin&quot;, &quot;Dashboard Functionality&quot;)">runScenario("Click on Admin", "Dashboard Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful Login&quot;, &quot;Login Functionality&quot;)">runScenario("Successful Login", "Login Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add a new employee and verify details&quot;, &quot;Add Employee in OrangeHRM&quot;)">runScenario("Add a new employee and verify details", "Add Employee in OrangeHRM")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Click on Leave tab&quot;, &quot;Leave Functionality&quot;)">runScenario("Click on Leave tab", "Leave Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Click on Recruitment Element&quot;, &quot;Recruitment check&quot;)">runScenario("Click on Recruitment Element", "Recruitment check")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -149,9 +169,18 @@
                   </a> <!-- runScenario("Valid Emplyee Search", "Directory Functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Valid Emplyee Search","Directory Functionality")</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.DashBoardPage.clickDirectoryElement()&quot; because &quot;this.dashboardPage&quot; is null
-	at stepdefinations.DirectorySteps.user_Is_On_Dashboard(DirectorySteps.java:44)
-	at ✽.user is on Dashboard(file:///C:/Users/mohak/eclipse-workspace/OrangeHRMProject_2/src/test/resources/features/directory.feature:3)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&quot;oxd-autocomplete-text-input oxd-autocomplete-text-input--active&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\mohak\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58989}, goog:processID: 12636, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58989/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf94d85dce977880cb99d3dccadb9e48
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtil.waitForElementVisible(WaitUtil.java:16)
+	at pages.DirectoryPage.enterEmployeeNameText(DirectoryPage.java:30)
+	at stepdefinations.DirectorySteps.enterUsername(DirectorySteps.java:36)
+	at ✽.I enter Username in the Employee name suggestive dropdown(file:///C:/Users/mohak/eclipse-workspace/OrangeHRMProject_2/src/test/resources/features/directory.feature:4)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -168,6 +197,26 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Successful Login&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Successful Login", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful Login","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Time Element Check&quot;, &quot;Time Functionality&quot;)">
+                  </a> <!-- runScenario("Time Element Check", "Time Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Time Element Check","Time Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Click on Admin&quot;, &quot;Dashboard Functionality&quot;)">
                   </a> <!-- runScenario("Click on Admin", "Dashboard Functionality") -->
                   <span class="method-name">runScenario</span>
@@ -178,10 +227,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Successful Login&quot;, &quot;Login Functionality&quot;)">
-                  </a> <!-- runScenario("Successful Login", "Login Functionality") -->
+                  <a name="runScenario(&quot;Add a new employee and verify details&quot;, &quot;Add Employee in OrangeHRM&quot;)">
+                  </a> <!-- runScenario("Add a new employee and verify details", "Add Employee in OrangeHRM") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Successful Login","Login Functionality")</span>
+                  <span class="parameters">("Add a new employee and verify details","Add Employee in OrangeHRM")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Click on Leave tab&quot;, &quot;Leave Functionality&quot;)">
+                  </a> <!-- runScenario("Click on Leave tab", "Leave Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Click on Leave tab","Leave Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Click on Recruitment Element&quot;, &quot;Recruitment check&quot;)">
+                  </a> <!-- runScenario("Click on Recruitment Element", "Recruitment check") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Click on Recruitment Element","Recruitment check")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -191,7 +260,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mohak\AppData\Local\Temp\testng-eclipse--988282232\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mohak\AppData\Local\Temp\testng-eclipse-2128930865\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,24 +317,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.TestRunner')
-data.setCell(0, 3, 72160);
+data.setCell(0, 3, 24305);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.TestRunner')
-data.setCell(1, 3, 46400);
+data.setCell(1, 3, 22110);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runners.TestRunner')
-data.setCell(2, 3, 46248);
+data.setCell(2, 3, 17180);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.TestRunner')
+data.setCell(3, 3, 11929);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.TestRunner')
+data.setCell(4, 3, 11310);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.TestRunner')
+data.setCell(5, 3, 10645);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.TestRunner')
+data.setCell(6, 3, 10287);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -293,26 +378,42 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@74a58a06)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@243c4346)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">runScenario("Add a new employee and verify details", "Add Employee in OrangeHRM")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">runScenario("Click on Admin", "Dashboard Functionality")</span>
-                <span class="method-start">175 ms</span>
+                <span class="method-start">17408 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Valid Emplyee Search", "Directory Functionality")</span>
-                <span class="method-start">46433 ms</span>
+                <span class="method-start">39520 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Click on Leave tab", "Leave Functionality")</span>
+                <span class="method-start">63827 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Successful Login", "Login Functionality")</span>
-                <span class="method-start">92835 ms</span>
+                <span class="method-start">75759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Click on Recruitment Element", "Recruitment check")</span>
+                <span class="method-start">86047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Time Element Check", "Time Functionality")</span>
+                <span class="method-start">97358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">165003 ms</span>
+                <span class="method-start">108007 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

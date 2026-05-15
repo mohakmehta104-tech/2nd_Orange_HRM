@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 08 16:23:01 IST 2026</td>
+<td>Started on:</td><td>Fri May 15 18:34:16 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>165 seconds (165034 ms)</td>
+<tr><td>Total time:</td><td>108 seconds (108040 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,16 +77,34 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid Emplyee Search", "Directory Functionality"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;pages.DashBoardPage.clickDirectoryElement()&quot; because &quot;this.dashboardPage&quot; is null
-	at stepdefinations.DirectorySteps.user_Is_On_Dashboard(DirectorySteps.java:44)
-	at ✽.user is on Dashboard(file:///C:/Users/mohak/eclipse-workspace/OrangeHRMProject_2/src/test/resources/features/directory.feature:3)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1794531113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1794531113'><pre>java.lang.NullPointerException: Cannot invoke &quot;pages.DashBoardPage.clickDirectoryElement()&quot; because &quot;this.dashboardPage&quot; is null
-	at stepdefinations.DirectorySteps.user_Is_On_Dashboard(DirectorySteps.java:44)
-	at ✽.user is on Dashboard(file:///C:/Users/mohak/eclipse-workspace/OrangeHRMProject_2/src/test/resources/features/directory.feature:3)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&quot;oxd-autocomplete-text-input oxd-autocomplete-text-input--active&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\mohak\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58989}, goog:processID: 12636, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58989/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf94d85dce977880cb99d3dccadb9e48
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtil.waitForElementVisible(WaitUtil.java:16)
+	at pages.DirectoryPage.enterEmployeeNameText(DirectoryPage.java:30)
+	at stepdefinations.DirectorySteps.enterUsername(DirectorySteps.java:36)
+	at ✽.I enter Username in the Employee name suggestive dropdown(file:///C:/Users/mohak/eclipse-workspace/OrangeHRMProject_2/src/test/resources/features/directory.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace382698552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace382698552'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&quot;oxd-autocomplete-text-input oxd-autocomplete-text-input--active&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\mohak\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58989}, goog:processID: 12636, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58989/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf94d85dce977880cb99d3dccadb9e48
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtil.waitForElementVisible(WaitUtil.java:16)
+	at pages.DirectoryPage.enterEmployeeNameText(DirectoryPage.java:30)
+	at stepdefinations.DirectorySteps.enterUsername(DirectorySteps.java:36)
+	at ✽.I enter Username in the Employee name suggestive dropdown(file:///C:/Users/mohak/eclipse-workspace/OrangeHRMProject_2/src/test/resources/features/directory.feature:4)
 </pre></div></td>
-<td>46</td>
-<td>runners.TestRunner@2002fc1d</td></tr>
+<td>24</td>
+<td>runners.TestRunner@4009e306</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -97,15 +115,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Admin", "Dashboard Functionality"</td>
-<td></td>
-<td>46</td>
-<td>runners.TestRunner@2002fc1d</td></tr>
-<tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful Login", "Login Functionality"</td>
 <td></td>
-<td>72</td>
-<td>runners.TestRunner@2002fc1d</td></tr>
+<td>10</td>
+<td>runners.TestRunner@4009e306</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Time Element Check", "Time Functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestRunner@4009e306</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Admin", "Dashboard Functionality"</td>
+<td></td>
+<td>22</td>
+<td>runners.TestRunner@4009e306</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a new employee and verify details", "Add Employee in OrangeHRM"</td>
+<td></td>
+<td>17</td>
+<td>runners.TestRunner@4009e306</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Leave tab", "Leave Functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestRunner@4009e306</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Recruitment Element", "Recruitment check"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestRunner@4009e306</td></tr>
 </table><p>
 </body>
 </html>

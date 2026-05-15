@@ -7,7 +7,7 @@ public class PersonalDetailsPage {
 	
 	WebDriver driver;
 	
-	By employeeNameHeader = By.xpath("//h6[@class='oxd-text oxd-text--h6 --strong']");
+	By employeeNameHeader = By.xpath("//div[@class='orangehrm-edit-employee-name']/h6");
 	
 	public PersonalDetailsPage(WebDriver driver)
 	{
